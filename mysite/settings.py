@@ -137,6 +137,7 @@ STATICFILES_DIRS = (
 # STATIC_ROOT = '/home/user1/www/nginx_icm/data/html/static'
 STATIC_ROOT = env.get_value('STATIC_ROOT', str)
 
+
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
